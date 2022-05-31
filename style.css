@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto',sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	background-color: #eee;
+	display: flex;
+	justify-content:  center;
+}
+
+.classement {
+	background-color: #fff;
+	width: 70%;
+	min-width: 1050px;
+	margin-top: 40px;
+	padding: 0 20px;
+	border-radius: 15px;
+}
+.legende {
+	border-bottom: 2px #eee solid;
+	margin-bottom: 10px;
+}
+
+.classement-item {
+	padding: 10px 0;
+	display: grid;
+	grid-template-columns: 150px 1fr 100px 100px 100px 100px;
+}
+
+.classement-item:nth-child(odd):not(:nth-child(1)) {
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+.center {
+	text-align: center;
+}
+.decaleGauche {
+	padding-left: 40px;
+}
+.drapeau {
+	padding-right: 10px;
+	transform: translateY(5px);
+}
